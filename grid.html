@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA grid</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="css/furnace.min.css">
+      <link rel="stylesheet" href="css/lead.css">
+      <script type="text/javascript" src="js/furnace.min.js"></script>
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <script type="text/javascript" src="jquery.js"></script>
+      <script type="text/javascript">
+         /* page specific js */
+         
+         
+      </script>
+      <style type="text/css">
+         /* page specific css */
+         .grid-example .col-xs-3, .grid-example .col-xs-6, .grid-example .col-xs-12{
+         box-sizing: border-box;
+         border: 1px solid #0080A2;
+         }
+         /* mobile */
+         @media only screen and  (max-width: 991px) {
+         .au-grid .container{background:rgba(0,174,239,0.4)}
+         .break{display:none;}
+         .mobile{display:inline;}
+         }
+         /* tablet */
+         @media only screen and  (min-width: 576px) {
+         .au-grid .container{background:rgba(203,219,42,0.4)}
+         .break{display:none;}
+         .tablet{display:inline}
+         }
+         /* desktop */
+         @media only screen and  (min-width: 1200px) {
+         .au-grid .container{background:rgba(161,200,97,0.4)}
+         .break{display:none;}
+         .tablet{display: none;}
+         .desktop{display:inline}
+         }
+         .au-header{background:none !important;}
+         	
+         .grid-example
+         .col-xs-12{
+         background:rgba(255,102,0,0.6);
+         }
+         .grid-example
+         .col-xs-6{
+         background:rgba(255,153,0,0.6);
+         }
+         .grid-example
+         .col-xs-3{
+         background:rgba(255,255,0,0.6);
+         }
+      </style>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="img/CASALOGO-white-i.svg" width="256"></a>
+                  </div>
+                  <div class="user">
+                     <div class="au-body au-body--dark">
+                        <a class="au-btn au-btn--dark" href="signed-out.html">Sign out</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="banner">
+            <div class=container>	
+               This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+            </div>
+         </div>
+         <div class="body">
+         <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="welcome.html">myCASA</a></li>
+                     <li>Grid demo</li>
+                  </ul>
+               </nav>
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Breakpoint: 
+                     <span class="break desktop">Desktop (1200+)</span>
+                     <span class="break tablet">Tablet (990 - 1200)</span>
+                     <span class="break mobile">Mobile (<990)</span>
+                  </h1>
+                  <a class="au-direction-link au-direction-link--left" href="mycasa.html">Back</a>
+               </header>
+               <div role="alert" class="au-page-alerts au-page-alerts--warning m-t-2">
+                  <div class="row">
+                     <div class="col-xs-9">
+                        <h3><abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> expiring soon</h3>
+                        <p>Your <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> (<a href="org-manage-reoc-renewal.html#flight" class="m-t-0">CASA.ReOC.2222</a>) will expire on 31 December 2018. Note that once a <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> expires a subsequent issue cannot be given and you will have to apply for an initial issue of the <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr>.</p>
+                     </div>
+                  </div>
+               </div>
+               <br /><br />
+               <div class="au-callout m-t-0">
+                  <div class="row">
+                     <div class="col-xs-9">
+                        <h4>Subsequent issue (renewal) of <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr></h4>
+                        <p>Your <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> expires soon. You can apply for a subesequent issue (renewal) online provided there are no changes required. Note that once a <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> expires a subsequent issue cannot be given and you will have to apply for an initial issue of the <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr>.</p>
+                        <br>
+                     </div>
+                  </div>
+               </div>
+               <div class="grid-example">
+                  <h4>12 col (full width)</h4>
+                  <div class="row">
+                     <div class="col-xs-12"><span>12</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                  </div>
+                  <h4>6 col (half width)</h4>
+                  <div class="row">
+                     <div class="col-xs-6"><span>6</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-6"><span>6</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                     <div class="col-xs-6"><span>6</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                  </div>
+                  <h4>6 col (half width)</h4>
+                  <div class="row collapse">
+                     <div class="col-xs-6"><span>6</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                     <div class="col-xs-6"><span>6</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                  </div>
+                  <h4>3 col (quarter width, collapse)</h4>
+                  <div class="row">
+                     <div class="col-xs-3"><span>3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-3"><span>3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                     <div class="col-xs-3"><span>3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-3"><span>3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                     <div class="col-xs-3"><span>3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                     <div class="col-xs-3"><span>3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-3"><span>3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                     <div class="col-xs-3"><span>3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                     <div class="col-xs-3"><span>3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                     <div class="col-xs-3"><span>3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non efficitur magna.</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer">
+            <div class="footer-wrapper">
+               <iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>

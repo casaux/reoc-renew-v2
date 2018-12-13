@@ -1,19 +1,6 @@
 $(document).ready(function(){
 	
-	$("#signout").bind("click",function(e){
-		
-		
-		if($(this).hasClass("expand")){
-			
-			$(this).removeClass("expand");
-			
-		} else {
-			
-			$(this).addClass("expand");
-			
-		}
-		
-	});
+	
 	
 	
 	$("a.au-btn").bind("click",function(){
